@@ -1,0 +1,275 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #bcbbb9;
+}
+main .pic figure {
+  margin: 0 auto;
+  overflow: hidden;
+  height: 1000px;
+  width: 100%;
+}
+main .pic figure img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.smallwrap {
+  padding: 0 1% 0 0.5%;
+  margin: 0 auto;
+  max-width: 500px;
+  line-height: 1.2em;
+}
+.smallwrap a {
+  color: #858380;
+}
+.smallwrap > *:first-child {
+  margin: 1.5em auto 1em auto;
+}
+#notafterhours {
+  font-size: 1.8em;
+}
+.wrapper {
+  position: relative;
+}
+footer {
+  margin: 0 auto;
+  max-width: 300px;
+  height: 1.5em;
+  font-size: 1.5em;
+}
+footer .container > * {
+  padding: 0 2% 0 2%;
+}
+footer.smallfooter {
+  position: absolute;
+  left: 30%;
+  right: 0;
+  bottom: 0;
+}
+footer.fullfooter {
+  max-width: 350px;
+  position: inherit;
+  left: inherit;
+  right: inherit;
+  bottom: inherit;
+}
+a {
+  color: #bcbbb9;
+  text-decoration: none;
+}
+a:hover {
+  color: #c9c9c7;
+  background: #5f5e5b;
+}
+.hidden {
+  display: none;
+}
+/* media queries */
+/* make image height look nice, depending on screen width, try to obtain roughly the same width/height ratio */
+@media screen and (min-width: 1188px) {
+  body main .pic figure {
+    height: 1188px;
+  }
+  footer.smallfooter {
+    bottom: 165px;
+    left: 500px;
+  }
+}
+@media screen and (min-width: 1287px) {
+  body main .pic figure {
+    height: 1287px;
+  }
+  footer.smallfooter {
+    bottom: 178.75px;
+    left: 525px;
+  }
+}
+@media screen and (min-width: 1386px) {
+  body main .pic figure {
+    height: 1386px;
+  }
+  footer.smallfooter {
+    bottom: 192.5px;
+    left: 550px;
+  }
+}
+@media screen and (min-width: 1485px) {
+  body main .pic figure {
+    height: 1485px;
+  }
+  footer.smallfooter {
+    bottom: 206.25px;
+    left: 575px;
+  }
+}
+@media screen and (min-width: 1584px) {
+  body main .pic figure {
+    height: 1584px;
+  }
+  footer.smallfooter {
+    bottom: 220px;
+    left: 600px;
+  }
+}
+@media screen and (min-width: 1683px) {
+  body main .pic figure {
+    height: 1683px;
+  }
+  footer.smallfooter {
+    bottom: 233.75px;
+    left: 625px;
+  }
+}
+@media screen and (min-width: 1782px) {
+  body main .pic figure {
+    height: 1782px;
+  }
+  footer.smallfooter {
+    bottom: 247.5px;
+    left: 650px;
+  }
+}
+@media screen and (min-width: 1881px) {
+  body main .pic figure {
+    height: 1881px;
+  }
+  footer.smallfooter {
+    bottom: 261.25px;
+    left: 675px;
+  }
+}
+@media screen and (min-width: 1980px) {
+  body main .pic figure {
+    height: 1980px;
+  }
+  footer.smallfooter {
+    bottom: 275px;
+    left: 700px;
+  }
+}
+/* moment when media queries stop adjusting pic */
+@media screen and (max-width: 1190px) {
+  footer.smallfooter {
+    bottom: 130px;
+    left: 45%;
+  }
+}
+/* some minor spatial beautifying */
+@media screen and (max-width: 800px) {
+  footer {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    font-size: 1.3em;
+  }
+  #notafterhours {
+    font-size: 1.6em;
+  }
+  .smallwrap {
+    padding-left: 1%;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer {
+    font-size: 1.2em;
+  }
+}

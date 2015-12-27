@@ -1,0 +1,127 @@
+@import 'nib'
+global-reset() // Nib provides a CSS reset
+
+// variables 
+link-color = #bcbbb9;//#657dae; //lighten(#3c4e72, 30%)
+link-hover-color = lighten(link-color, 20%)
+link-hover-bgcolor = darken(link-color, 50%)
+background-color = black
+text-color = link-color
+pic-width = 1163px
+pic-height = 1790px
+end = 20 // goes from 1980 down to start * 1980/end in end-start # of steps, for responsiveness
+start = floor(0.6 * end) // where the start of media queries is, 70% of end
+
+*
+  box-sizing border-box
+
+body
+  background background-color
+  font-family "Trebuchet MS", Helvetica, sans-serif
+  color text-color
+
+main
+  .pic
+    figure
+      margin 0 auto
+      overflow hidden
+      height 1000px
+      width 100%
+      img
+        max-width 100%
+        width 100%
+        height 100%
+
+.smallwrap
+  padding 0 1% 0 0.5%
+  margin 0 auto
+  max-width 500px
+  line-height 1.2em
+  a
+    color darken(link-color, 30%)
+.smallwrap > *:first-child
+  margin 1.5em auto 1em auto
+#notafterhours
+  font-size 1.8em
+  //font-weight bold
+
+.wrapper
+  position relative
+
+footer
+  margin 0 auto
+  max-width 300px
+  height 1.5em
+  font-size 1.5em
+footer .container > *
+  padding 0 2% 0 2%
+
+footer.smallfooter
+  position absolute
+  left 30%
+  right 0
+  bottom 0
+
+footer.fullfooter
+  max-width 350px
+  position inherit
+  left inherit
+  right inherit
+  bottom inherit
+
+a
+  color link-color
+  text-decoration none
+a:hover
+  color link-hover-color
+  background link-hover-bgcolor
+
+.hidden
+  display none
+
+/* media queries */
+
+/* make image height look nice, depending on screen width, try to obtain roughly the same width/height ratio */
+for i in (start..end)
+  temp = i * 1980 / end
+  tempbottom = i * 275 / end
+  templeft = i * 500 / end + 200 // magic numbers whoo!
+  @media screen and (min-width: temp px) {
+    body main .pic figure {
+      height temp px
+    }
+    // place footer in nice position..
+    footer.smallfooter {
+      bottom tempbottom px
+      left templeft px
+    }
+  }
+/* moment when media queries stop adjusting pic */
+@media screen and (max-width: 1190px) {
+  footer.smallfooter {
+    bottom 130px
+    left 45%
+  }
+}
+/* some minor spatial beautifying */
+@media screen and (max-width: 800px) {
+  footer {
+    font-size 1.4em
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    font-size 1.3em
+  }
+  #notafterhours {
+    font-size 1.6em
+  }
+  .smallwrap {
+    padding-left 1%
+  }
+}
+@media screen and (max-width: 400px) {
+  footer {
+    font-size 1.2em
+  }
+}

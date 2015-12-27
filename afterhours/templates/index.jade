@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .smallwrap.notafterhours
+    h1#notafterhours.hidden it's not after hours now is it?
+  div.pic
+    figure
+      img#afterpic(src="img/notafterhours.jpg" alt="notafterhours")
+  audio#aftersong
+    source#aftersongsource(type="audio/mpeg")
+    | 
+    | get with the times bro!
+
+block footer
+  include smallfooter.jade
+
+block scripts
+  script(src='js/update.js',type="text/javascript")
+

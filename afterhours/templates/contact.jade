@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div.smallwrap
+    div
+      p
+        | feel free to contact me about just about at 
+        a#contactEmail(href="")
+        |  or through something 
+        a(href="//dmdcb.com/contact.php") here
+
+block footer
+  include fullfooter.jade
+
+block scripts
+  script(src='js/emailobfuscate.js',type="text/javascript")

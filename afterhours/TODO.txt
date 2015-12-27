@@ -1,0 +1,5 @@
+links in new window í about og contact DONE
+
+dropdown menu í about/contact
+
+tékka á mobile javascript loaded og stöff

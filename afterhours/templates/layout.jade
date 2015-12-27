@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel="shortcut icon" href="img/favicon.ico")
+    // for search engines/facebook
+    link(rel="image_src" href="img/aftermidnight.jpg")
+    meta(name="description" content="enjoy after hours only")
+    title
+      | after hours
+  body
+    //- get analytics for actual homepage page, not afterhours
+    <?php include_once("../static/php/analyticstracking.php") ?>
+    div.wrapper
+      main(role="main")
+        block content
+      block footer
+    block scripts
