@@ -10,7 +10,7 @@
     <meta name="description" content="enjoy after hours only">
     <title>after hours</title>
   </head>
-  <body><?php include_once("../static/php/analyticstracking.php") ?>
+  <body>
     <div class="wrapper">
       <main role="main">
         <div class="smallwrap">

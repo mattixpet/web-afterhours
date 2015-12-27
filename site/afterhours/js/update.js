@@ -52,7 +52,7 @@ function setSong(after) {
     // it's not after hours yet!
     audio.loop = false;
     audio.pause();
-    audio.currentTime = 0;
+    //audio.currentTime = 0; // this line seemed to break the code in Firefox
   } else {
     // only reload song if time has changed (otherwise keep on looping!)
     // capture singplaying part in link.com/blabla/audio/songplaying.mp3
