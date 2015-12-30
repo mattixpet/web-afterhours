@@ -8,5 +8,6 @@
 * Developed on Chrome only really. Works on Firefox though too.
 * Uses the same framework as my [homepage](https://github.com/mattixpet/web-homepage), i.e. jade, stylus and php.
 * To change the code, the suggested method is changing .jade files in **afterhours/templates** and .styl file in **afterhours/styles** and after each change you have to run **afterhours/compile.bat** to compile .jade and .styl into .html/.php and .css respectively.
+* Wrote about this project at [my project site](//adobeslabs.herokuapp.com/projects/3/).
 
 ###### Written in 2015.
